@@ -1,0 +1,178 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<title>Crawling Project - Start</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="icon" type="image/png" href="media/images/favicon.png" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" href="media/css/screen.css" />
+	<link rel="stylesheet" href="media/css/jquery-ui.css" />
+	 <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+    <style>
+    	.my_span{
+    		float: left;
+    		height:30px;
+    		width: 100%;
+    	}
+    	.my_span2{
+    		float: left;
+    		height:10px;
+    		width: 100%;
+
+    	}
+    	.my_content{
+    		float: left;
+    		padding-left:20px;
+    		width: 95%;
+
+    	}
+      .search{
+        float: left;
+        padding-left:25%;
+        width: 90%;
+      }
+      .my_span3{
+        float: left;
+        margin-left-left:20px;
+      }
+	</style>
+	<script>
+	
+	</script>
+
+</head>
+
+ <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Crawler</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+  
+              <li class="active">
+                <a href="./index.html">Start</a>
+              </li>
+              <li class="">
+                <a href="./realtime.html">Realtime Statistics</a>
+              </li>
+              <li class="">
+                <a href="https://github.com/derrick0714/web_search_engin/blob/master/crawling/Readme.md">Code Architecture</a>
+              </li>
+              <li class="">
+                <a href="./about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div margin:10px></div>
+<div class="wrapper">
+	<div id="content">
+      <div id="breadcrumb">
+      <ul>
+          
+    <li>Start</li>
+
+      </ul>
+      </div>
+    <div class="my_span"></div>
+    <div class="search">
+      <form class="form-search" action="commit.php">
+            <input type="text" class="input-xxlarge search-query" placeholder="input key words" name="key_words">
+            <div class="my_span3"></div>
+            <button class="btn" type="submit">Search</button>
+    </div>
+    <div id="my">
+    </div>
+    
+  <div class="my_content">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th olspan="2"><b>Seed:</b></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td width="200"><b>  result num : </b></td>
+          <td> <input type="text" name="result_count" value="10"></td>
+        </tr>
+    </div>
+     <div class="my_span"></div>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th olspan="2"><b>Downloader:</b></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td width="200"><b>  thread num: </b></td>
+          <td>  <input type="text" name="down_thread" value="1"></td>
+
+        </tr>
+        <tr>
+          <td>download folder:</td>
+          <td>./data</td>
+
+        </tr>
+      </tbody>
+    </table>  
+  </div>
+  <div class="my_span"></div>
+  <div class="my_content">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th olspan="2"><b>Parser:</b></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td width="200"><b>  thread num: </b></td>
+          <td> <input type="text" name="parse_thread" value="1"></td>
+        </tr>
+    </table>  
+  </div>
+</form>
+	</div><!-- content end -->
+</div><!-- wrapper end -->
+
+<footer class="footer">
+  <div class="container">
+    <p></p>
+    <p>Developed by <a href = "https://github.com/derrick0714" target="blank">@deng xu</a> and <a href = "https://github.com/Adam57" target="blank">@wang qi</a> </p>
+    <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+
+  </div>
+</footer>
+	<script type="text/javascript" src='media/js/jquery-1.7.2.min.js'></script>
+	<script type="text/javascript" src='media/js/date.format.min.js'></script>
+	<script type="text/javascript" src='media/js/jquery.relative-date.js'></script>
+	<script type="text/javascript" src='media/js/moment.min.js'></script>
+	
+<script type="text/javascript">
+	$('.timestamp').relativeDate();
+</script>
+
+</body>
+</html>
